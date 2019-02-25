@@ -1,0 +1,170 @@
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  background-color: #74b9ff;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 30px;
+  margin-bottom: 15px;
+  margin-top: 25px;  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2d3436;
+}
+
+nav ul li a:hover {
+  color: #b2bec3;
+}
+
+h3 {
+  padding-bottom: 10px;
+}
+
+.project-tile .project1 {
+  grid-area: 'project1';
+}
+
+.project-tile .project2 {
+  grid-area: 'project2';
+}
+
+.project-tile .project3 {
+  grid-area: 'project3';
+}
+
+.projects-wrapper {
+  display: grid;
+  grid-template-areas: 'project1 project2 project3';
+  grid-template-columns: 25% 25% 25%;
+  justify-content: center;
+  grid-gap: 2em;
+  padding-bottom: 20px;
+}
+
+.project-tile {
+  background-color: #dfe6e9;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.projects-header {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 60%;
+  padding:20px;
+}
+
+.projects-header h2 {
+  padding-bottom: 20px;
+}
+
+#welcome-section {
+  background-color: #74b9ff;
+  /* to cover the welcome section size req of the challenge */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects {
+  background-color: #a29bfe;
+  padding: 10px;
+}
+
+#contact {
+  background-color: #0984e3;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+  .projects-wrapper {
+    grid-template-areas: 
+      'project1'
+      'project2'
+      'project3';
+    grid-template-columns: 85%;
+    grid-template-rows: auto auto auto;
+  }
+  .projects-header {
+    grid-template-columns: 85%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  nav ul {
+    text-align: center;
+  }
+  nav ul li {
+    margin: 20px;
+  }
+  .project {
+    margin: 40px 0;
+  }
+}
+
+i {
+  font-size: 50px;
+  color: black;
+}
+
+i:hover {
+  color: #b2bec3;
+}
+
+.contact-tile .contact1 {
+  grid-area: 'contact1';
+}
+
+.contact-tile .contact2 {
+  grid-area: 'contact2';
+}
+
+.contact-tile .contact3 {
+  grid-area: 'contact3';
+}
+
+.contact-header {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 60%;
+  padding:20px;
+}
+
+.contact-header h2 {
+  padding-bottom: 20px;
+}
+
+.contact-wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-areas: 'contact1 contact2 contact3';
+  grid-template-columns: auto auto auto;
+  grid-gap: 2em;
+  padding-bottom: 20px;
+}
+
+footer {
+  height: auto;
+  padding: 10px;
+  background: #6c5ce7;
+}
